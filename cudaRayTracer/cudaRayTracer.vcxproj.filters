@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="H">
+      <UniqueIdentifier>{627cccd2-1f76-487e-873f-344be2af719b}</UniqueIdentifier>
+      <Extensions>
+      </Extensions>
+    </Filter>
+    <Filter Include="C,CU,CPP">
+      <UniqueIdentifier>{61ee3d22-7e46-4022-99b2-fc8adf08993d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H\GObject">
+      <UniqueIdentifier>{4381a73d-1bf2-4627-82e8-69e408e4952b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H\Tracer">
+      <UniqueIdentifier>{f22d3d8d-c83f-4315-a783-1e5c3b103def}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{86627771-8bae-4c35-9705-c991e24b2b08}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HitRec.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="Ray.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="RGBColor.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="GObject.h">
+      <Filter>H\GObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>H\GObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewPlane.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="Tracer.h">
+      <Filter>H\Tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimaryRayTracer.h">
+      <Filter>H\Tracer</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_math.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>H\GObject</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="main.cu">
+      <Filter>C,CU,CPP</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Source.cu">
+      <Filter>C,CU,CPP</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
