@@ -1,12 +1,17 @@
 #ifndef __utils_hpp__
 #define __utils_hpp__
 
-#define SYNC_AND_CHECK_CUDA_ERRORS {cudaDeviceSynchronize(); cudaError_t x = cudaGetLastError(); if ((x) != cudaSuccess) { printf("Error: %s\n", cudaGetErrorString(x)); system("pause"); exit(1); }}
+#ifndef SYNC_AND_CHECK_CUDA_ERRORS
+#define SYNC_AND_CHECK_CUDA_ERRORS {cudaStreamSynchronize(0); cudaError_t x = cudaGetLastError(); if ((x) != cudaSuccess) { printf("Error: %s\n", cudaGetErrorString(x)); fclose(stdout); exit(1); }}
+#endif
+
 
 #include <cuda_runtime.h>
 #include <device_launch_parameters.h>
 #include <cstdio>
 #include <cstdlib>
+#include "curand.h"
+#include "curand_kernel.h"
 
 void CUDAInfo(void) {
 	cudaDeviceProp props;

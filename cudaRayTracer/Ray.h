@@ -6,6 +6,8 @@
 typedef struct _Ray {
 	float3 origin;
 	float3 direction;
-	int2 pixel;
+	int image_idx;
+	int sampler_point_number;
+	int sampler_set_number;
 } Ray;
 #endif

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="main.cu" />
+    <CudaCompile Include="Source.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Sampler">
+      <UniqueIdentifier>{15a6fc91-1364-4f15-b920-fdad77bf648e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sampler.h">
+      <Filter>Sampler</Filter>
+    </ClInclude>
+    <ClInclude Include="cuda_math.h" />
+    <ClInclude Include="RegularSampler.h">
+      <Filter>Sampler</Filter>
+    </ClInclude>
+    <ClInclude Include="JitteredSampler.h">
+      <Filter>Sampler</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiJitteredSampler.h">
+      <Filter>Sampler</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

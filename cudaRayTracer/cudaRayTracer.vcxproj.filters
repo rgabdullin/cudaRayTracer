@@ -18,6 +18,12 @@
     <Filter Include="Utils">
       <UniqueIdentifier>{86627771-8bae-4c35-9705-c991e24b2b08}</UniqueIdentifier>
     </Filter>
+    <Filter Include="H\Sampler">
+      <UniqueIdentifier>{a4267080-daf8-4eb6-bc3c-fd5a28fe62e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H\Camera">
+      <UniqueIdentifier>{777ad6af-06e0-4128-a768-62b3c09e2c3c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HitRec.h">
@@ -54,6 +60,33 @@
       <Filter>Utils</Filter>
     </ClInclude>
     <ClInclude Include="Triangle.h">
+      <Filter>H\GObject</Filter>
+    </ClInclude>
+    <ClInclude Include="JitteredSampler.h">
+      <Filter>H\Sampler</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiJitteredSampler.h">
+      <Filter>H\Sampler</Filter>
+    </ClInclude>
+    <ClInclude Include="RegularSampler.h">
+      <Filter>H\Sampler</Filter>
+    </ClInclude>
+    <ClInclude Include="Sampler.h">
+      <Filter>H\Sampler</Filter>
+    </ClInclude>
+    <ClInclude Include="Samplers.h">
+      <Filter>H\Sampler</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>H\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="OrthographicCamera.h">
+      <Filter>H\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="PinholeCamera.h">
+      <Filter>H\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
       <Filter>H\GObject</Filter>
     </ClInclude>
   </ItemGroup>
